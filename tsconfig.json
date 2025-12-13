@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-native",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "noImplicitAny": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "target": "esnext",
+    "types": [
+      "react-native",
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".expo"
+  ],
+  "include": [
+    "App.js",
+    "index.js",
+    "src/**/*"
+  ],
+  "extends": "expo/tsconfig.base"
+}
