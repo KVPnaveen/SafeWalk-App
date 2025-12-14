@@ -166,9 +166,8 @@ const inputStyles = StyleSheet.create({
   },
   input: {
     flex: 1,
-    fontSize: Typography.body_lg.fontSize,
+    ...Typography.body,
     color: Colors.text_primary,
-    fontWeight: '400',
   },
   toggleButton: {
     padding: Spacing.sm,
@@ -283,7 +282,7 @@ const buttonStyles = StyleSheet.create({
     color: 'inherit',
   },
   buttonText: {
-    fontWeight: '500',
+    // Typography styles applied via text_large, text_medium, text_small
     color: Colors.text_light,
   },
   size_large: {
@@ -299,13 +298,13 @@ const buttonStyles = StyleSheet.create({
     paddingHorizontal: Spacing.md,
   },
   text_large: {
-    fontSize: 16,
+    ...Typography.button_large,
   },
   text_medium: {
-    fontSize: 14,
+    ...Typography.button,
   },
   text_small: {
-    fontSize: 12,
+    ...Typography.button_small,
   },
   disabled: {
     opacity: 0.5,
@@ -481,8 +480,7 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.sm,
   },
   subtitle: {
-    fontSize: Typography.body_lg.fontSize,
-    fontWeight: '400',
+    ...Typography.small,
     color: Colors.text_secondary,
   },
 
@@ -498,7 +496,7 @@ const styles = StyleSheet.create({
     marginTop: -Spacing.md,
   },
   forgotPasswordText: {
-    fontSize: Typography.body_md.fontSize,
+    ...Typography.small,
     color: Colors.primary_blue,
     fontWeight: '500',
   },
@@ -513,12 +511,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   registerText: {
-    fontSize: Typography.body_md.fontSize,
+    ...Typography.small,
     color: Colors.text_secondary,
-    fontWeight: '400',
   },
   registerLink: {
-    fontSize: Typography.body_md.fontSize,
+    ...Typography.small,
     color: Colors.primary_blue,
     fontWeight: '600',
   },
