@@ -1,6 +1,7 @@
 /**
  * SafeWalk Design Theme
  * Modern, clean UI with blue accents and professional styling
+ * Typography uses system default fonts (-apple-system, Roboto, Arial)
  */
 
 export const Colors = {
@@ -63,20 +64,54 @@ export const BorderRadius = {
   full: 9999,
 };
 
+/**
+ * Typography System
+ * Uses system default fonts (-apple-system on iOS, Roboto on Android, Arial fallback)
+ * React Native uses system fonts by default, so no fontFamily specification needed
+ */
 export const Typography = {
   // Headings
   h1: {
     fontSize: 30,
-    fontWeight: '700',
+    fontWeight: '700', // Bold - Page titles
     lineHeight: 38,
   },
   h2: {
     fontSize: 24,
-    fontWeight: '600',
+    fontWeight: '600', // Semi-Bold - Section headers
     lineHeight: 32,
   },
   
-  // Body
+  // Body Text
+  body: {
+    fontSize: 16,
+    fontWeight: '400', // Normal - Main text
+    lineHeight: 24,
+  },
+  small: {
+    fontSize: 14,
+    fontWeight: '400', // Normal - Secondary text
+    lineHeight: 20,
+  },
+  
+  // Button Text (14-16px, Medium)
+  button: {
+    fontSize: 15, // Middle of 14-16px range
+    fontWeight: '500', // Medium
+    lineHeight: 22,
+  },
+  button_large: {
+    fontSize: 16,
+    fontWeight: '500', // Medium
+    lineHeight: 24,
+  },
+  button_small: {
+    fontSize: 14,
+    fontWeight: '500', // Medium
+    lineHeight: 20,
+  },
+  
+  // Legacy support (keeping for backward compatibility)
   body_lg: {
     fontSize: 16,
     fontWeight: '400',
@@ -91,13 +126,6 @@ export const Typography = {
     fontSize: 12,
     fontWeight: '400',
     lineHeight: 18,
-  },
-  
-  // Button & Labels
-  button: {
-    fontSize: 16,
-    fontWeight: '500',
-    lineHeight: 24,
   },
   label: {
     fontSize: 14,

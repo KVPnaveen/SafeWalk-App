@@ -70,13 +70,13 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   infoLabel: {
-    fontSize: Typography.body_sm.fontSize,
+    ...Typography.small,
     color: Colors.text_secondary,
     fontWeight: '500',
     marginBottom: Spacing.xs,
   },
   infoValue: {
-    fontSize: Typography.body_md.fontSize,
+    ...Typography.body,
     color: Colors.text_primary,
   },
 });

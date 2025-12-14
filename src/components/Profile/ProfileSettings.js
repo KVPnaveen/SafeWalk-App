@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   label: {
-    fontSize: Typography.body_md.fontSize,
+    ...Typography.small,
     color: Colors.text_primary,
     fontWeight: '500',
   },

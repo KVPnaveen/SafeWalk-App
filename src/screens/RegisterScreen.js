@@ -185,8 +185,7 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.sm,
   },
   subtitle: {
-    fontSize: Typography.body_lg.fontSize,
-    fontWeight: '400',
+    ...Typography.small,
     color: Colors.text_secondary,
   },
 
@@ -205,12 +204,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   signInText: {
-    fontSize: Typography.body_md.fontSize,
+    ...Typography.small,
     color: Colors.text_secondary,
-    fontWeight: '400',
   },
   signInLink: {
-    fontSize: Typography.body_md.fontSize,
+    ...Typography.small,
     color: Colors.primary_blue,
     fontWeight: '600',
   },
